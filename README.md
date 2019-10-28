@@ -1,2 +1,3 @@
 # keras_bert_ner
 基于keras和keras_bert的中文命名实体识别，搭建的网络为bert+bilstm_crf
+运行main函数即可训练并使用模型
