@@ -112,7 +112,7 @@ class bert_bilstm_crf:
     def Id2Label(self, ids):
         result = []
         for id in ids:
-            result.append(self._label[str(id)])
+            result.append(self._label[str(id + 1)])
         return result
 
     def Vector2Id(self, tags):
