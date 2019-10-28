@@ -1,0 +1,2 @@
+# keras_bert_ner
+基于keras和keras_bert的中文命名实体识别，搭建的网络为bert+bilstm_crf
