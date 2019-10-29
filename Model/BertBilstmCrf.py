@@ -45,6 +45,9 @@ class bert_bilstm_crf:
             model_path + "bert_model.ckpt",
             seq_len=self.max_seq_length
             )
+        #make bert layer trainable
+        for layer in bert.layers:
+            layer.trainable = True
         x1 = Input(shape=(None,))
         x2 = Input(shape=(None,))
         bert_out = bert([x1, x2])
