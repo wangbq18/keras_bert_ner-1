@@ -14,7 +14,7 @@ if __name__ == "__main__":
     #模型
     max_seq_length = 80
     batch_size = 24
-    epochs = 2
+    epochs = 100
     lstmDim = 64
     model = bert_bilstm_crf(max_seq_length, batch_size, epochs, lstmDim)
     #model.TrainModel(train_data, test_data)
